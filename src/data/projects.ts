@@ -84,6 +84,30 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     ],
   },
   {
+    id: 'vivo-moinhos',
+    title: 'Loja Conceito Vivo — Moinhos Shopping',
+    client: 'Vivo',
+    location: 'Porto Alegre — RS',
+    category: 'Lojas Conceito',
+    year: '2025/2026',
+    highlight: true,
+    summary:
+      'Projeto conceitual de altíssimo padrão no Moinhos Shopping (Porto Alegre/RS), com luminárias orgânicas suspensas, mobiliário curvo sob medida, fachada ripada, piso de alto tráfego e áreas de experiência integradas.',
+    scope: [
+      'Fachada ripada em alto padrão com letreiro corporativo Vivo',
+      'Luminárias orgânicas customizadas no forro e iluminação cênica LED',
+      'Marcenaria especial curva, estante amadeirada e painéis ripados',
+      'Obras civis, climatização, elétrica, lógica, sprinklers e sonorização',
+    ],
+    coverImage: '/images/obras/vivo_moinhos/moinhos-1.jpg',
+    gallery: [
+      '/images/obras/vivo_moinhos/moinhos-1.jpg',
+      '/images/obras/vivo_moinhos/moinhos-2.jpg',
+      '/images/obras/vivo_moinhos/moinhos-3.jpg',
+      '/images/obras/vivo_moinhos/moinhos-4.jpg',
+    ],
+  },
+  {
     id: 'mega-barra',
     title: 'Loja Conceito Mega Barra',
     client: 'Vivo',
@@ -277,6 +301,16 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
  * Lista documentada de entregas realizadas em todo o território nacional.
  */
 export const PORTFOLIO_ARCHIVE: PortfolioRecord[] = [
+  {
+    title: 'Loja Conceito Vivo Moinhos Shopping',
+    client: 'Vivo',
+    location: 'Porto Alegre — RS',
+    period: '2025/2026',
+    area: 'Loja Conceito Shopping',
+    category: 'Lojas Conceito',
+    services:
+      'Obras Civis, Fachada Ripada, Luminárias Orgânicas LED, Marcenaria Curva, Climatização, Elétrica, Lógica e Sprinklers',
+  },
   {
     title: 'Loja Vivo Viçosa (Calçadão Arthur Bernardes)',
     client: 'Vivo',
