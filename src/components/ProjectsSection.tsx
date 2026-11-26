@@ -179,7 +179,43 @@ export function ProjectsSection() {
             </div>
           </div>
 
-          <div className="mt-6 overflow-x-auto">
+          {/* Mobile cards (< md) */}
+          <div className="mt-6 space-y-3 md:hidden">
+            {displayedArchive.map((item) => (
+              <div
+                key={`mobile-${item.title}-${item.period}`}
+                className="rounded-2xl border border-slate-200 bg-stone-50/70 p-4"
+              >
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span className="inline-block rounded-md bg-slate-900 px-2.5 py-0.5 text-[11px] font-semibold text-white">
+                    {item.client}
+                  </span>
+                  <div className="flex items-center gap-2 text-xs">
+                    <span className="font-medium text-slate-500">{item.period}</span>
+                    <span className="rounded-md bg-emerald-50 px-2 py-0.5 font-semibold text-emerald-800">
+                      {item.area}
+                    </span>
+                  </div>
+                </div>
+
+                <h4 className="font-display mt-2.5 text-base font-bold text-slate-900">
+                  {item.title}
+                </h4>
+
+                <p className="mt-1 inline-flex items-center gap-1.5 text-xs font-medium text-slate-600">
+                  <MapPin className="h-3.5 w-3.5 shrink-0 text-emerald-700" />
+                  {item.location}
+                </p>
+
+                <p className="mt-2.5 border-t border-slate-200/80 pt-2.5 text-xs leading-relaxed text-slate-600">
+                  {item.services}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop table (>= md) */}
+          <div className="mt-6 hidden overflow-x-auto md:block">
             <table className="w-full text-left text-sm">
               <thead>
                 <tr className="border-b border-slate-200 text-xs font-semibold tracking-wider text-slate-500 uppercase">
