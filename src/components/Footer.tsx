@@ -96,14 +96,21 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 shrink-0 text-emerald-400" />
-                <a
-                  href={`https://wa.me/${COMPANY_INFO.contact.whatsappDigits}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="transition-colors hover:text-white"
-                >
-                  {COMPANY_INFO.contact.phones[0]} • {COMPANY_INFO.contact.mobile}
-                </a>
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <a
+                    href="tel:+554130164061"
+                    className="transition-colors hover:text-white"
+                  >
+                    {COMPANY_INFO.contact.phones[0]}
+                  </a>
+                  <span className="text-slate-600">•</span>
+                  <a
+                    href={`tel:+${COMPANY_INFO.contact.whatsappDigits}`}
+                    className="transition-colors hover:text-white"
+                  >
+                    {COMPANY_INFO.contact.mobile}
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 shrink-0 text-emerald-400" />

@@ -34,13 +34,22 @@ export function Navbar() {
             >
               {COMPANY_INFO.contact.email}
             </a>
-            <a
-              href="tel:+554130164061"
-              className="inline-flex items-center gap-1.5 font-medium text-white transition-colors hover:text-emerald-400"
-            >
+            <div className="flex items-center gap-2 font-medium text-white">
               <Phone className="h-3.5 w-3.5 text-emerald-400" />
-              {COMPANY_INFO.contact.phones[0]} • {COMPANY_INFO.contact.mobile}
-            </a>
+              <a
+                href="tel:+554130164061"
+                className="transition-colors hover:text-emerald-400"
+              >
+                {COMPANY_INFO.contact.phones[0]}
+              </a>
+              <span className="text-slate-600">•</span>
+              <a
+                href={`tel:+${COMPANY_INFO.contact.whatsappDigits}`}
+                className="transition-colors hover:text-emerald-400"
+              >
+                {COMPANY_INFO.contact.mobile}
+              </a>
+            </div>
           </div>
         </div>
       </div>
